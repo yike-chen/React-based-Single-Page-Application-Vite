@@ -1,0 +1,51 @@
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 1rem;
+    background-color: black;
+}
+
+.footer__link_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    width: 100%;
+    padding-left: 2rem;
+}
+
+.footer__link_arrow{
+    font-size: 0.8rem;
+    color: #FCD000;
+    padding-right: 0.3rem;
+}
+
+.footer__link{
+    cursor: pointer;
+
+    text-align: center;
+    font-size: 0.8rem;
+
+    margin: 0.4rem;
+}
+
+.footer__link a{
+    color: white;
+}
+
+.footer__link.login{
+    padding-right: 3rem;
+    margin-left: auto;
+}
+
+.footer__copyright{
+    justify-self: center;
+
+    font-size: 0.9rem;
+    text-align: center;
+    
+    color: white;
+
+}

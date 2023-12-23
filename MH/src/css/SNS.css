@@ -1,0 +1,159 @@
+.sns{
+    width: 100%;
+
+    padding-bottom: 5rem;
+}
+.sns__title{
+    text-align: center;
+
+    width: 100%;
+    font-size: 2.75rem;
+}
+
+.sns__accordion{
+    width:95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding:1rem 0;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+}
+
+.sns__accordion-button{
+    width: 100%;
+    padding:0.5rem 1rem;
+    border:0;
+
+    background-color: white;
+
+    font-size: 1rem;
+    text-align: start;
+    font-weight: bold;
+}
+
+.sns__content.show{
+    display:initial;
+}
+.sns__content.hide{
+    display: none;
+}
+
+.sns__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+    margin:0;
+}
+
+.sns__menu_item{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding:1rem;
+    padding-bottom: 0;
+}
+.sns__logo{
+    width: 7rem;
+    height: 7rem;
+
+    margin:1rem;
+}
+
+.sns__url{
+    color: blue;
+}
+
+.gg-chevron-down {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+.gg-chevron-down::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    left: 4px;
+    top: 2px
+}
+
+/*below CSS adapted from https://css.gg under the MIT License*/
+.gg-chevron-up {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+.gg-chevron-up::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(-45deg);
+    left: 4px;
+    bottom: 2px
+}
+
+.open{
+    animation: openAnimation 1s ease forwards;
+}
+
+.close{
+    animation: closeAnimation 1s ease forwards;
+}
+
+@keyframes openAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+
+  @keyframes closeAnimation {
+    from {
+      transform: rotate(180deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .open{
+        animation: none;
+    }
+    
+    .close{
+        animation: none;
+    }
+  }
+

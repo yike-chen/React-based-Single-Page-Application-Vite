@@ -1,0 +1,131 @@
+.monsters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #EFEAE6;
+}
+
+.monsters__title{
+    color:#4E2209;
+}
+
+.monsters__toggle_list{
+    width: 60%;
+}
+
+.monsters__toggle_list_menu{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.monsters__toggle_list_menu.monsters__toggle_list_menu--hidden{
+    display: grid;
+}
+
+.monsters__toggle_list_menu_item{
+    grid-column: span 3;
+    text-align: center;
+
+    border-right: solid;
+    border-right-width: 2px;
+    border-right-color: #AD9A8F;
+
+}
+
+.monsters__toggle_list_menu_item:nth-child(1){
+    border-left: solid;
+    border-left-width: 2px;
+    border-left-color: #AD9A8F;
+}
+
+.monsters__toggle_list_button{
+    border:0;
+    background-color: #EFEAE6;
+    font-weight: bolder;
+    font-size:0.88rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.all{
+    color:black;
+}
+.flying_wyverns{
+    color:#0F7EC3;
+}
+.elder_dragons{
+    color:#8C49AF;
+}
+.other{
+    color:#CF0808;
+}
+
+.monsters__show_button{
+    display: none;
+
+    background-color: #EFEAE6;
+    font-weight: bolder;
+    font-size:1rem;
+    cursor: pointer;
+    text-align: center;
+
+    width:20rem;
+    border: solid;
+    border-width: 2px;
+    border-color: #AD9A8F;
+}
+
+.monsters__show_button:hover{
+    background-color: #E3D8D1;
+}
+
+@media (width < 50rem){
+    .monsters__toggle_list{
+        width: 20rem;
+    }
+    
+    .monsters__monsters_item{
+        grid-column: span 6;
+    }
+    .monsters__show_button{
+        display: initial;
+    }
+    .monsters__toggle_list_menu.monsters__toggle_list_menu--hidden{
+        display: none;
+    }
+    .monsters__toggle_list_menu{
+        grid-template-rows: repeat(12, 1fr);
+        
+        position: absolute;
+        
+        width:20rem;
+        margin-top: 0;
+    }
+    .monsters__toggle_list_menu_item{
+        grid-column: span 12;
+        grid-row: span 3;
+        text-align: center;
+    
+        border-right: solid;
+        border-right-width: 2px;
+        border-right-color: #AD9A8F;
+
+        border-left: solid;
+        border-left-width: 2px;
+        border-left-color: #AD9A8F;
+    }
+    .monsters__toggle_list_menu_item:nth-child(4){
+        border-bottom: solid;
+        border-bottom-width: 2px;
+        border-bottom-color: #AD9A8F;
+    }
+
+    .monsters__toggle_list_button{
+        width: 100%;
+        height: 100%;
+    }
+    .monsters__toggle_list_button:hover{
+        background-color: #E3D8D1;
+    }
+}

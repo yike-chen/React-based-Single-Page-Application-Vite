@@ -1,0 +1,53 @@
+dialog{
+    background-color:#F1F1F1;
+
+    cursor:default;
+}
+
+.form_login{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    width:15rem;
+}
+
+.form_login.error{
+    grid-template-rows: repeat(15, 1fr);
+}
+
+.form_login_row{
+    grid-row: span 3;
+    grid-column: span 12;
+
+    margin: 1rem;
+    margin-bottom: 0;
+
+    text-align: start;
+}
+
+.form_login_title{
+    text-align: center;
+}
+
+.error_message{
+    text-align: center;
+    color:red;
+}
+
+.form_login_button{
+    grid-row: span 2;
+    grid-column: span 6;
+
+    margin: 1rem;
+    margin-bottom: 0;
+    border: 0;
+    color:white;
+    background-color: #393939;
+}
+
+.form_login_button:hover{
+    background-color: #999999;
+
+    cursor: pointer;
+}

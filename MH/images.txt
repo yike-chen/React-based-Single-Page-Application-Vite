@@ -1,0 +1,18 @@
+        image                                   owner
+
+src/img/about_background.jpeg                   Yike Chen
+src/img/coral_highland.png                      Yike Chen
+src/img/elders_recess.png                       Yike Chen
+src/img/Linkedin_logo.png                       Yike Chen
+src/img/logo.png                                Yike Chen
+src/img/monster_Deviljho.png                    Yike Chen
+src/img/monster_Diablos.png                     Yike Chen
+src/img/monster_KushalaDaora.png                Yike Chen
+src/img/monster_Nergigante.png                  Yike Chen
+src/img/monster_Teostra.png                     Yike Chen
+src/img/monster_Zinogre.png                     Yike Chen
+src/img/rotten_vale.png                         Yike Chen
+src/img/sns_facebook.png                        Yike Chen
+src/img/sns_ins.png src/img/sns_x.png           Yike Chen
+src/img/wildspire_waste.png                     Yike Chen
+src/img/contect_us.jpeg                standar license         https://www.istockphoto.com/photo/contact-us-businessman-typing-on-laptop-with-mail-phone-email-virtual-icon-contact-gm1445683045-484012098?clarity=false

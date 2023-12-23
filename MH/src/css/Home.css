@@ -1,0 +1,29 @@
+.panel{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    padding:1rem;
+    background-color:cornsilk;
+}
+.panel_pic{
+    margin: 1rem;
+    width: 10rem;
+    height: 10rem;
+}
+.cat{
+    width: 10rem;
+    height: 10rem;
+}
+.panel_content{
+    grid-column: span 8;
+}
+
+.panel_title{
+    text-align: center;
+}
+.panel_text{
+    text-indent: 2em;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}

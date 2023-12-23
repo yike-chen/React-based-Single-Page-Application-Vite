@@ -1,0 +1,60 @@
+:root {
+  flex:1;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+
+  min-width: 360px;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  padding:0;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  -webkit-user-drag: none;
+}
+
+.skip_link {
+  position: absolute;
+  left: 30%;
+  right:30%;
+  top: 1%;
+  padding: 4px;
+  transform: translateY(-100%);
+  color: white;
+
+  text-align: center;
+}
+
+.skip_link:focus {
+  transform: translateY(0%);
+}
